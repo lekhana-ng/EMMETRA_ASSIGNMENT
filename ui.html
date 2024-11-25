@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task and Clock Interface</title>
+    <link rel="stylesheet" href="stylesui.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tasks">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <li>Puzzle</li>
+                <li>Sudoku</li>
+                <li>Candy Crush</li>
+            </ul>
+
+        </div>
+        <div class="clock-section">
+            <h2>Dynamic Clock</h2>
+            <div class="clock">
+                <span id="hours">12</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <button onclick="changeTime('add')">Increase Time</button>
+                <button onclick="changeTime('subtract')">Decrease Time</button>
+            </div>
+        </div>
+    </div>
+    <script src="scriptui.js"></script>
+</body>
+</html>
